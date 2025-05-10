@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Switch from './PopupSwitch/Switch'
 import { FaMinus, FaPlus } from 'react-icons/fa'
 

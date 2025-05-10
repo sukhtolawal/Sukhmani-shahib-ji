@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { FaChevronCircleDown, FaChevronCircleUp } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { HiX } from 'react-icons/hi'
@@ -41,7 +41,9 @@ const Sidebar = ({setFullPath}:{setFullPath(val:boolean):void}) => {
               setMenuButton(true)
                 
             }, 400);
+            return clearInterval(timer)
         }
+       
     })
     
   return (

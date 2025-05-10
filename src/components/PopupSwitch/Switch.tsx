@@ -1,9 +1,9 @@
-import React, { useState} from 'react'
+import { useState} from 'react'
 import "./Switch.css"
 import { useTranslation } from '../../hooks/TranslationStore'
 
 const Switch = ({name,handleToggle}:{name:string; handleToggle():void}) => {
-  const [val, setVal] = useState(false)
+  const [,setVal] = useState(false)
 
     const { isTranslation, setIsTranslation}  = useTranslation()
 

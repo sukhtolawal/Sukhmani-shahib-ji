@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { create } from 'zustand'
 
 
@@ -10,7 +10,7 @@ export const useStore = create<StoreProps>((set)=>({
     currentAsht: 0,
     setCurrentAsht:(asht)=>{
 
-        set((state)=>({
+        set(()=>({
             currentAsht: asht
 
         }

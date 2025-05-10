@@ -1,6 +1,4 @@
-import { useQueries } from '@tanstack/react-query'
-import React, { useEffect, useState } from 'react'
-import { urls } from '../utils/urls'
+
 import { useStore } from '../hooks/Store'
 import UseAshtAccording from '../hooks/UseAshtAccording'
 import PathLayout from './PathLayout'

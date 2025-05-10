@@ -9,7 +9,7 @@ export const useTranslation = create<TranslationInterface>((set)=>({
     isTranslation:false,
 
     setIsTranslation:(val)=>{
-        set((state)=>({
+        set(()=>({
             isTranslation: val 
 
         }))

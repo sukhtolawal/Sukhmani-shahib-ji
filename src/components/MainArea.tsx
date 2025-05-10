@@ -1,4 +1,4 @@
-import React from 'react'
+
 import useAllLines from '../hooks/UseAllLines'
 import PathLayout from './PathLayout'
 import { useTranslation } from '../hooks/TranslationStore'

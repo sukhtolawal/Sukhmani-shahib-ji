@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { FaChevronCircleDown, FaChevronCircleUp } from 'react-icons/fa'
 import { ashtpadiArray, gurmukhiDigits } from '../../utils/Arrays'
 import { useStore } from '../../hooks/Store';
@@ -11,7 +11,7 @@ const AshtLayout = ({text,ashttoggle,setFullPath}:{text:string;ashttoggle():void
     const devRef = useRef<HTMLSpanElement>(null)
 
     const [togglePauri, setTogglePauri] = useState(false)
-    const {currentAsht,setCurrentAsht} = useStore()
+    const {setCurrentAsht} = useStore()
     const handleTogglePauri = ()=>{
         setTogglePauri(!togglePauri)
        

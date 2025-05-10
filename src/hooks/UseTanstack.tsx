@@ -1,6 +1,4 @@
-import { useQueries } from '@tanstack/react-query'
 
-import { urls } from '../utils/urls'
 import useAllLines from './UseAllLines'
 
 
