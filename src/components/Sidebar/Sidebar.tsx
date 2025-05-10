@@ -59,11 +59,11 @@ const Sidebar = ({setFullPath}:{setFullPath(val:boolean):void}) => {
 
             
                 
-                <div className='mt-10 ml-2 text-xl font-sans font-semibold px-8 py-4 bg-white/70 w-[90%] shadow-xl rounded-xl flex justify-between items-center cursor-pointer' onClick={handleAshtSideToggle}> <span>ਸੁਖਮਨੀ ਸਾਹਿਬ </span><span> {toggleAsht ? <FaChevronCircleDown onClick={handleAshtToggle} /> :<FaChevronCircleUp onClick={handleAshtToggle}/>}</span></div>
+                <div className='mt-10 ml-2 text-xl font-sans font-semibold px-8 bg-white/70 w-[90%] shadow-xl rounded-xl flex justify-between items-center cursor-pointer py-10' onClick={handleAshtSideToggle}> <span>ਸੁਖਮਨੀ ਸਾਹਿਬ </span><span> {toggleAsht ? <FaChevronCircleDown onClick={handleAshtToggle} /> :<FaChevronCircleUp onClick={handleAshtToggle}/>}</span></div>
 
-                <div className='mt-5 overflow-y-auto scrollbar h-full'>
+                <div className='mt-5 overflow-y-auto scrollbar h-full' style={{ maxHeight: "calc(100vh - 200px)" }}>
                 
-                <div className={`mt-10 ml-2 font-sans font-semibold py-4 bg-white/70 w-[90%] shadow-xl rounded-xl overflow-hidden ${toggleAsht ? "h-auto":"h-0 opacity-0 overflow-hidden"}   transition-all duration-500`}>
+                <div className={`mt-10 ml-2 font-sans font-semibold py-4 bg-white/70 w-[90%] shadow-xl rounded-xl ${toggleAsht ? "h-auto":"h-0 opacity-0 overflow-hidden"}   transition-all duration-500`}>
                   
                   {ashtpadiArray.map((asht,index)=>(
 
