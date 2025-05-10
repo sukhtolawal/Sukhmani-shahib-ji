@@ -41,7 +41,7 @@ const Sidebar = ({setFullPath}:{setFullPath(val:boolean):void}) => {
               setMenuButton(true)
                 
             }, 400);
-            return clearInterval(timer)
+            return ()=> clearInterval(timer)
         }
        
     })
