@@ -10,6 +10,11 @@ const AshtpadiCard = () => {
      const ashtArr = UseAshtAccording()  
 
      const {isTranslation} = useTranslation()
+
+
+     console.log(currentAsht)
+
+     
      
 
      

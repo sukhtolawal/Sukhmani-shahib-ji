@@ -22,11 +22,14 @@ const AshtLayout = ({text,ashttoggle,setFullPath}:{text:string;ashttoggle():void
     }
     const handlCurrentAsht = ()=>{
         if (devRef.current){
+            
             setCurrentAsht(ashtpadiArray.indexOf(devRef.current.innerText))
+            
         }
         setFullPath(false)
         ashttoggle()
     }
+    
     
   return (
     <div className='flex flex-col'>
