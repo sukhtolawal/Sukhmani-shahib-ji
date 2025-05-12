@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Switch from './PopupSwitch/Switch'
-import { FaMinus, FaPlus } from 'react-icons/fa'
+
 import { BsThreeDotsVertical } from 'react-icons/bs'
 
 export const TranslationButton = () => {
