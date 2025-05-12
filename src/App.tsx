@@ -5,11 +5,15 @@ import MainArea from './components/MainArea'
 import AshtpadiCard from './components/AshtpadiCard'
 
 import { TranslationButton } from './components/TranslationButton'
+import Audio from './components/buttons/Audio'
+import { useTranslation } from './hooks/TranslationStore'
 
 
 const App = () => {
   
  const [fullPath, setFullPath] = useState(true)
+
+ const {isAudio} = useTranslation()
  
  
  
@@ -17,7 +21,7 @@ const App = () => {
   return (
     <div>
     
-      <Sidebar setFullPath = {setFullPath}/>
+      <aside className='relative z-100'><Sidebar setFullPath = {setFullPath}/></aside>
 
       {fullPath && <MainArea/>}
 
@@ -25,7 +29,7 @@ const App = () => {
       {!fullPath && <AshtpadiCard/>}
 
       <TranslationButton/>
-
+       {isAudio && <div className='fixed bottom-0 ml-3 bg-white/40 backdrop-blur-2xl p-5 rounded-full overflow-hidden w-[95%] flex justify-center items-center'><Audio/></div>}
       
 
      </div>
